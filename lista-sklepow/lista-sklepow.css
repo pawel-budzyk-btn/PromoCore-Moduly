@@ -16,6 +16,7 @@
   --component-primary-text-color: var(--color-a-cold-gray-900);
   --input-text-color: var(--color-a-cold-gray-800);
   --column-text-color: var(--color-a-cold-gray-1000);
+  --input-background-color: var(--color-a-cold-gray-150);
 }
 
 .dark {
@@ -30,6 +31,7 @@
   --input-background-color: #22272B;
   --border-color: #2D363C;
   --component-primary-text-color: #eee;
+  --input-background-color: #22272B;
 }
 
 .dark img {
@@ -135,7 +137,7 @@
   border: 1px solid var(--border-color);
   padding: 0 8px;
   color: var(--input-text-color);
-  background-color: var(--menu-container-background-color);
+  background-color: var(--input-background-color);
 }
 
 .menu-container__content-game-item__content {
