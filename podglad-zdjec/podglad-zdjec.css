@@ -35,10 +35,6 @@
   --input-background-color: #22272B;
 }
 
-.dark img {
-  filter: contrast(50%) brightness(300%);
-}
-
 .menu-container {
   font-family: "Sana-Sans-Alt", sans-serif;
   font-size: 14px;
