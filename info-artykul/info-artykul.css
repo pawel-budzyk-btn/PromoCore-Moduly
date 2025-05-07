@@ -42,6 +42,10 @@
   color: #999 !important;
 }
 
+.dark .menu-container__content-block-container__block-content__background-color {
+  opacity: 0.13;
+}
+
 .menu-container {
   font-family: "Sana-Sans-Alt", sans-serif;
   font-size: 14px;
