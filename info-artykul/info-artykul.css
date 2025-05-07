@@ -216,3 +216,7 @@
   background-color: var(--input-background-color);
   margin-top: 4px;
 }
+
+.menu-container__content-block-container__block-label__label__label-text {
+  color: var(--text-color);
+}
