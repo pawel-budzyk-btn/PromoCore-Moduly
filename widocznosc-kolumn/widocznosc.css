@@ -21,10 +21,9 @@
   --circle-background-color: #3B444B;
   --input-background-color: #22272B;
   --border-color: #2D363C;
-
 }
 
-img {
+.dark img {
   filter: contrast(50%) brightness(300%);
 }
 
@@ -200,7 +199,7 @@ img {
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
-  background-image: url("./../check.svg");
+  background-image: url("./../assets/icons/check.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
