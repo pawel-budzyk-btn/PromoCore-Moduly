@@ -1,0 +1,158 @@
+:root {
+  --menu-container-background-color: var(--color-a-cold-gray-150);
+  --menu-container-header-background-color: var(--color-a-cold-blue-100);
+  --menu-container-header-text-color: var(--color-a-cold-gray-600);
+  --border-color: var(--color-a-cold-gray-400);
+  --header-icon-background-color: var(--color-a-cold-gray-500);
+  --primary-color: #388BFF;
+  --outline-color: #2055cd;
+  --error-color: #e0001a;
+  --success-color: #19cd89;
+  --text-color: var(--color-a-cold-gray-900);
+  --short-name-background-color: var(--color-a-cold-gray-600);
+  --short-name-text-color: var(--color-a-cold-gray-1000);
+  --footer-button-background-color: #940011;
+  --footer-button-text-color: var(--color-a-cold-gray-1000);
+  --component-primary-text-color: var(--color-a-cold-gray-900);
+  --input-text-color: var(--color-a-cold-gray-800);
+  --column-text-color: var(--color-a-cold-gray-1000);
+  --input-background-color: var(--color-a-cold-gray-1000);
+  --circle-background-color: var(--color-a-cold-gray-500);
+}
+
+.dark {
+  --menu-container-background-color: #161A1D;
+  --menu-container-header-background-color: #22272B;
+  --color-a-cold-gray-600: #ffffff;
+  --color-a-cold-gray-400: #ffffff;
+  --color-a-cold-gray-800: #ffffff;
+  --text-color: #fff;
+  --menu-container-header-text-color: #FFFFFF;
+  --circle-background-color: #3B444B;
+  --input-background-color: #22272B;
+  --border-color: #2D363C;
+  --component-primary-text-color: #eee;
+  --input-background-color: #22272B;
+}
+
+.menu-container {
+  font-family: "Sana-Sans-Alt", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 440px;
+  min-height: calc(100% - 24px);
+  box-sizing: border-box;
+  background-color: var(--menu-container-background-color);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-image: url(./../nomenklatura_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 12px auto;
+}
+
+.menu-container__header {
+  background-color: var(--menu-container-header-background-color);
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--menu-container-header-text-color);
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.menu-container__content {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+  color: var(--text-color);
+}
+
+/* Style do poszczególnych modułów */
+.menu-container__content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-container__content-section-header {
+  font-size: 14px;
+}
+
+.menu-container__content-section-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.menu-container__content-section-content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.menu-container__content-section-content-row:nth-child(even) {
+  background-color: var(--menu-container-header-background-color);
+}
+
+.menu-container__content-section-content-row span {
+  line-height: 1;
+}
+
+.menu-container__content-section-content-row:not(:last-child) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu-container__content-section-content-row-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu-container__content-section-content-row-value {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  height: 25px;
+}
+
+.menu-container__content-section-content-table-header, .menu-container__content-section-content-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 25px;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.menu-container__content-section-content-table-header > div {
+  text-align: center;
+  font-weight: 600;
+}
+
+.menu-container__content-section-content-table-row > div {
+  text-align: center;
+}
+
+.menu-container__content-section-content-table-row:nth-child(odd) {
+  background-color: var(--menu-container-header-background-color);
+}
+
+.menu-container__content-section-content-table-row:last-child {
+  border-bottom: none;
+}
