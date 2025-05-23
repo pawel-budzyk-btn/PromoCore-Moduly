@@ -297,6 +297,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  color: var(--text-color);
 }
 
 .menu-container__content-list-footer-item-pill {
@@ -308,7 +309,6 @@
 
 .menu-container__content-list-footer-item-pill-label {
   font-size: 9px;
-  color: var(--color-a-cold-gray-600);
 }
 
 .menu-container__content-list-footer-item-pill-value {
